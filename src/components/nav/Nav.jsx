@@ -70,7 +70,7 @@ const Nav = () => {
           <i onClick={toggleNav} class="ri-menu-line"></i>
         </div>
         <div className="container-login">
-          <Link className='link-login' to={"/login"}>
+          <Link onClick={closeNav} className='link-login' to={"/login"}>
             {
               isAuthenticated ? 
               <>
