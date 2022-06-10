@@ -1,7 +1,7 @@
 /* Elements of login */
 
 .container-all-login {
-    margin-top: 12rem;
+    margin-top: 1rem;
 }
 
 .container-btn .login-button {
@@ -131,5 +131,64 @@
     margin-top: 20px;
 }
 
-/* Main page css */
+.container-back .container-card {
+    opacity: 1;
+    width: 250px;
+    height: 450px;
+    background-color: #fff;
+    position: absolute;
+    top: 120px;
+    left: 540px;
+    border-radius: 10px;
+    z-index: 1;
+    border: 2px solid #000;
+}
 
+.container-back .container-card h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container-back .container-card .back-to {
+    color: #0b06f8;
+    display: flex;
+    padding-top: 20px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.container-back .container-card h3 {
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: left;
+    justify-content: left;
+    line-height: 27px;
+    font-size: 1rem;
+}
+
+.container-back .container-card ul {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.container-back .container-card ul li {
+    padding: 5px;
+}
+
+.container-back .container-card .back-to i {
+    font-size: 1.2rem;
+    padding-right: 5px;
+}
+
+.container-back .back-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+/* Main page css */
