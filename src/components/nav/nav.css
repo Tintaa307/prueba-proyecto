@@ -5,6 +5,7 @@
     height: 80px;
     background-color: #a4233a;
     transition: all 0.4s ease-in-out;
+    z-index: 2;
 }
 
 .container-header::before {
@@ -51,6 +52,7 @@
 }
 .container-header .container-nav .container-logo img {
     width: 9%;
+    user-select: none;
 }
 
 .container-header .container-nav .container-login {
@@ -58,6 +60,14 @@
     top: 28px;
     right: 90px;
     user-select: none;
+}
+
+.container-header .container-nav .container-login .link-login img {
+    width: 50%;
+    position: relative;
+    top: -12px;
+    left: 50px;
+    border-radius: 50%;
 }
 
 .container-header .container-nav .container-login .link-login i {
@@ -79,6 +89,13 @@
     left: 50%;
     transform: translateX(-50%);
     margin-top: 4.5rem; 
+    display: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.container-header .container-nav .container-list .list-nav.show {
+    display: block;
+    transition: all 0.4s ease-in-out;
 }
 
 .container-header .container-nav .container-list .list-nav li {

@@ -4,6 +4,7 @@ import About from './components/about/About'
 import Diet from './components/diet/Diet'
 import Rutines from './components/rutines/Rutines'
 import Contact from './components/contact/Contact'
+import Users from './login/Users'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App () {
@@ -17,6 +18,7 @@ function App () {
           <Route path="/diet" element={<Diet />} />
           <Route path="/rutines" element={<Rutines />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Users />} />
         </Routes>
       </BrowserRouter>
     </>

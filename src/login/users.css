@@ -1,0 +1,135 @@
+/* Elements of login */
+
+.container-all-login {
+    margin-top: 12rem;
+}
+
+.container-btn .login-button {
+    background-color: #da052b;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #000;
+    outline: none;
+    color: #000;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    font-size: .9rem;
+    opacity: 1;
+}
+
+.container-btn .login-button:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.container-all-logout {
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+}
+
+.container-btn .logout-button {
+    background-color: #da052b;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #000;
+    outline: none;
+    color: #000;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    font-size: .9rem;
+    opacity: 1;
+}
+
+.container-btn .logout-button:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.loader {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: linear-gradient(45deg, transparent, transparent 40%, #0b06f8);
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background-color: #000;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.loader::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+    border-radius: 50%;
+    z-index: 1000;
+    z-index: 1;
+    filter: blur(30px);
+}
+
+.container-info-mail {
+    position: absolute;
+    top: 120px;
+    left: 10px;
+}
+
+.container-info-mail img {
+    border-radius: 10px;
+}
+
+.container-info-mail h2 {
+    margin-top: 20px;
+}
+
+.container-info-mail p {
+    margin-top: 20px;
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.container-info-mail textarea {
+    color: #000;
+    font-size: .9rem;
+    font-weight: 800;
+    border: 2px solid #000;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+/* Main page css */
+
