@@ -5,6 +5,11 @@ import './users.css'
 export const ProfileUser = () => {
     const { user, isAuthenticated, isLoading } = useAuth0()
 
+    const toggleProfile = () => {
+        const profile = document.querySelector('.container-edit-profile')
+        profile.classList.toggle("show")
+    }
+
     if(isLoading) {
         return(
             <div className="container-profile">
@@ -21,6 +26,7 @@ export const ProfileUser = () => {
                 <p className="email">
                     Email: {user.email}
                 </p>
+                <input type="button" value="Edit Profile" className="btn-edit-profile" onClick={toggleProfile} />
                 <div className="container-edit-profile">
                     <textarea 
                         name="textarea" 
