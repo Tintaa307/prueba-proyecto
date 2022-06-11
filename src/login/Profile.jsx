@@ -21,15 +21,21 @@ export const ProfileUser = () => {
                 <p className="email">
                     Email: {user.email}
                 </p>
-                <textarea 
-                    name="textarea" 
-                    placeholder="Descripcion..." 
-                    className="textarea" 
-                    cols="36" 
-                    rows="10"
-                >
+                <div className="container-edit-profile">
+                    <textarea 
+                        name="textarea" 
+                        placeholder="Descripcion..." 
+                        className="textarea" 
+                        cols="36" 
+                        rows="10"
+                    >
 
-                </textarea>
+                    </textarea>
+                    <div className="container-modified">
+                        <button className="btn-modified-edit">Save</button>
+                        <button className="btn-modified-delete"><i class="ri-delete-bin-line"></i></button>
+                    </div>
+                </div>
             </div>
         )
     )
