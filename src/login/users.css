@@ -28,8 +28,9 @@
 }
 
 .container-all-logout {
-    position: absolute;
-    bottom: 5px;
+    width: 30%;
+    position: relative;
+    top: 400px;
     left: 10px;
 }
 
@@ -240,10 +241,13 @@
 }
 
 .container-edit-profile {
+    position: relative;
     display: none;
+    z-index: 2;
 }
 
 .container-edit-profile.show {
+    position: relative;
     display: block;
 }
 

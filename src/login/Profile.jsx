@@ -8,6 +8,7 @@ export const ProfileUser = () => {
     const toggleProfile = () => {
         const profile = document.querySelector('.container-edit-profile')
         profile.classList.toggle("show")
+        const btn = document.querySelector('.logout-button')
     }
 
     if(isLoading) {
